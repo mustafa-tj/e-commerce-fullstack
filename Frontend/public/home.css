@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+
+.tours{
+    margin-top: 2rem;
+    
+    /* text-align: center; */
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.tours h1 {
+    text-align: center;
+}
+
+.tour-details {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1.5rem;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.tour-date{
+    width:5%;
+    text-align: left;     
+}
+
+.tour-place {
+    margin-left: 60px;
+    width: 13%;
+    
+}
+.tour-stadium {
+    margin-left: 60px;
+    width: 22%;
+    margin-right: 20px;
+}
+
+
+.buy-tickets-btn{
+    width: 15%;
+    background-color: skyblue;
+    color: white;
+    margin-left: 8%;
+    height: 25px;
+    border: 10% solid white;
+    margin-bottom: 5px;
+    border-color: white;
+    cursor: pointer;    
+}
+
+

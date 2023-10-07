@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.music-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+.music-heading {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.music-content {
+    margin-top: 6%;
+    text-align: center;
+    height: 350px;
+    width: 45%;
+    display: inline-block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.music-content h2 {
+ margin-bottom: 10px;
+}
+.product-img-container img{
+    height: 250px;
+    width: 250px;
+}
+
+.music-content .s2 {
+    /* text-align: left; */
+    /* margin-left: 20%; */
+}
+.product-details {
+    margin-top: 5%;
+    /* text-align: justify; */
+    margin-left: 25%;
+    
+}
+
+.shop-btn {
+    margin-left: 31%;
+    height: 30px;
+    width: 25%;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Merch */
+
+.merch-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.merch-heading {
+    margin-top: 6%;
+    text-align: center;
+}
+
+.merch-content {
+    margin-top: 6%;
+    text-align: center;
+    height: 350px;
+    width: 45%;
+    display: inline-block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.merch-content h2 {
+    margin-bottom: 10px;
+   }
+.product-img-container img{
+    height: 250px;
+    width: 250px;
+}
+
+.merch-content .s1 {
+    /* text-align: left; */
+    margin-left: 25%;
+}
+.product-details {
+    margin-top: 5%;
+    text-align: justify;
+    
+}
+
+.shop-btn {
+    margin-left: 31%;
+    height: 30px;
+    width: 25%;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+   
+
+.notification {
+    height: 80px;
+    width: 25%;
+    background-color: skyblue;
+    right: 5%;
+    bottom: 5%;
+    position: fixed;
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    color: black;
+}
+
+.see-the-cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+.see-the-cart button {
+  height: 50px;
+  width: 150px; 
+  background-color: grey;
+  color: skyblue; 
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+}

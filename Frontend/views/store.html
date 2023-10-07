@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/store.css">
+    <link rel="stylesheet" href="../public/main.css">
+    <link rel="stylesheet" href="../public/cart.css">
+    <title>Store</title>
+</head>
+<body onClick="popupCart(event)">
+    <div class="container" >
+        <header>
+            <nav>
+                <a href="./home.html">Home</a>
+                <a href="./store.html">Store</a>
+                <a href="./about.html">About</a>
+                <button id="nav-cart" class="cart-btn-nav">Cart</button>
+            </nav>
+        </header>
+    
+
+        <div class="header-div">
+            <ul>
+                <li><h1>The Generics</h1></li>
+                <!-- <li><button>Get our Latest Album</button></li> -->
+                <!-- <li><i>play button</i></li> -->
+            </ul>                        
+        </div>
+
+        <!-- CART -->
+
+        <div class="cart" id="main-cart">
+            <button class="close" id="close-btn">X</button>
+            <h2>Cart</h2>
+
+            <div class="cart-heading">
+                <h5 class="items-h">ITEMS <hr></h5>
+                <h5 class="price-h">PRICE <hr></h5>
+                <h5 class="quantity-h">QUANTITY <hr></h5>
+                
+          
+            </div>
+            
+            <ul class="cart-list" id="cart-list">
+                <li class="cart-items" id="cart-items">
+                    
+                    <!-- <div class="item-container" id="item-container">
+                        <img  src="https://i.pinimg.com/originals/41/a0/59/41a0593ec5c6562e838f349aba5ae9ef.jpg" alt="">
+                        <h5>Album 2</h5>       
+                    </div>
+
+                    <div class="price-container" id="price-container">
+                        $9.99 
+                    </div>
+    
+                    
+                        
+                    <div class="quantity-container" id="quantity-container">
+                        <input type="number" placeholder="1" min="1">
+                        <button class="remove-from-cart">Remove</button>
+                        
+                    </div> -->
+                    
+                    
+                </li>
+            </ul>
+            <!-- <hr class="line"> -->
+            
+            <ul id="cart-details">
+
+            </ul>
+            <span class="totalPrice" id="total-price">Total : </span>
+            <div class="purchase-btn">
+                <button class="purchase">Purchase</button>
+            </div>
+            
+        </div>
+        <!-- CART END -->
+
+        <!-- Product added to the cart notification -->
+        <div class="notification" id="not">
+            <p id="notif-p"></p>
+        </div>
+
+        <!-- notification end  -->
+
+        <div class="music-container">
+            <div class="music-heading">
+                <h1>MUSIC</h1>
+            </div>
+
+            <!-- 1 -->
+            <div class="music-content">
+                <h2>Album 1</h2>
+                <div class="product-img-container">
+                    <img src="https://i.pinimg.com/originals/41/a0/59/41a0593ec5c6562e838f349aba5ae9ef.jpg" alt="">
+                </div>
+                <div class="product-details">
+                    $<span class="s2">9.99</span>
+                    <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+                </div>     
+            </div>
+
+            <!-- 2 -->
+            <div class="music-content">
+                <h2>Album 2</h2>
+                <div class="product-img-container">
+                    <img src="https://i.pinimg.com/originals/41/a0/59/41a0593ec5c6562e838f349aba5ae9ef.jpg" alt="">
+                </div>
+                <div class="product-details">
+                    $<span class="s2">25</span>
+                    <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+                </div>     
+            </div>
+
+            <!-- 3 -->
+            <div class="music-content">
+                <h2>Album 3</h2>
+                <div class="product-img-container">
+                    <img src="https://i.pinimg.com/originals/41/a0/59/41a0593ec5c6562e838f349aba5ae9ef.jpg" alt="">
+                </div>
+                <div class="product-details">
+                    $<span class="s2">40</span>
+                    <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+                </div>     
+            </div>
+
+            <!-- 4 -->
+            <div class="music-content">
+                <h2>Album 4</h2>
+                <div class="product-img-container">
+                    <img src="https://i.pinimg.com/originals/41/a0/59/41a0593ec5c6562e838f349aba5ae9ef.jpg" alt="">
+                </div>
+                <div class="product-details">
+                    <!-- <span class="s1">$<span class="s2">60</span></span> -->
+                    $<span class="s2">40</span>
+                    <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+                </div>     
+            </div>
+        </div>
+            <!-- Merch -->
+        <div class="merch-container">
+            <div class="merch-heading">
+                <h1>MERCH</h1>
+            </div>
+
+            <!-- 1 -->
+            <div class="merch-content">
+                <h2>Hoodie</h2>
+                <div class="product-img-container">
+                    <img src="https://images-cdn.ubuy.co.in/EDN47ZKS-kpop-seventeen-album-music-concert.jpg" alt="">
+                </div>
+                <div class="product-details">
+                    $<span class="s2">100</span>
+                    <!-- <span class="s1">$<span class="s2">100</span></span> -->
+                    <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+                </div>     
+            </div>
+
+            <!-- 2 -->
+            <div class="merch-content">
+                <h2>Coffee Mug</h2>
+                <div class="product-img-container">
+                    <img src="https://www.nicepng.com/png/detail/67-676308_the-d-is-missing-mug-snoop-dogg-coffee.png" alt="">
+                </div>
+                <div class="product-details">
+                    $<span class="s2">45</span>
+                    <!-- <span class="s1">$<span class="s2">45</span></span> -->
+                    <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+                </div>     
+            </div>
+        </div>
+
+        <div class="see-the-cart" >
+            <button id="see-the-cart">See The Cart</button>
+        </div>
+        
+
+        <footer>
+            <h1> The Generics</h1>
+            
+            <div class="footer-links">
+                <a href="">yt</a>
+                <a href="">spotify</a>
+                <a href="">twitter</a>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+<script src="../js/script.js"></script>
+
+</html>
