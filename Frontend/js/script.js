@@ -75,10 +75,46 @@ function popupCart(event) {
 
         total.innerText = `Total :$${totalPrice}`
         
-    }
-
-
-
-    
+    }   
     
 }
+window.addEventListener('DOMContentLoaded',(data)=>{
+    axios.get('http://localhost:3000/products/music')
+    .then((Music) => {
+        Music.data.forEach(data => {
+            var parentNode = document.getElementById('music-container')
+            var childHTML = `<div class="music-content">
+            <h2>${data.title}</h2>
+            <div class="product-img-container">
+                <img src="${data.imageUrl}" alt="">
+            </div>
+            <div class="product-details">
+                $<span class="s2">${data.price}</span>
+                <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+            </div>     
+        </div>`
+        parentNode.innerHTML = parentNode.innerHTML + childHTML
+        })
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+    axios.get('http://localhost:3000/products/merch')
+    .then((Merch) => {
+        Merch.data.forEach(data => {
+            var merchContainer = document.getElementById('merch-container');
+            var childHTML = `<div class="merch-content">
+            <h2>${data.title}</h2>
+            <div class="product-img-container">
+                <img src="${data.imageUrl}" alt="">
+            </div>
+            <div class="product-details">
+                $<span class="s2">${data.price}</span>
+                
+                <button class="shop-btn" id="shop-btn" type='button'>ADD TO CART</button>
+            </div>     
+        </div>`
+        merchContainer.innerHTML = merchContainer.innerHTML + childHTML
+        })
+    })
+})
