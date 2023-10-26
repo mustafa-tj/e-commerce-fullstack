@@ -1,140 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .music-container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    
-}
-.music-heading {
-    margin-top: 25px;
-    text-align: center;
+    width: 800px;
+    position: relative;
+    left: 23%;
+
+
+
+
+
 }
 
-.music-content {
-    margin-top: 6%;
-    text-align: center;
-    height: 350px;
-    width: 45%;
-    display: inline-block;
-    margin-left: auto; 
-    margin-right: auto;
-}
-.music-content h2 {
- margin-bottom: 10px;
-}
-.product-img-container img{
-    height: 250px;
-    width: 250px;
+.music-container h2 {
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    left: 45%;
 }
 
-.music-content .s2 {
-    /* text-align: left; */
-    /* margin-left: 20%; */
+.img-cont {
+    display: flex;
 }
+
+.product-imgs {
+    height: 300px;
+    width: 300px;
+}
+
 .product-details {
-    margin-top: 5%;
-    /* text-align: justify; */
-    margin-left: 25%;
-    
+    margin-top: 15px;
+    width: 300px;
 }
 
 .shop-btn {
-    margin-left: 31%;
-    height: 30px;
-    width: 25%;
-    background-color: skyblue;
-    color: white;
-    border: none;
     cursor: pointer;
+    float: right;
+    background-color: #b1a296;
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 35px;
 }
-
-/* Merch */
 
 .merch-container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 20px;
+    width: 800px;
+    position: relative;
+    left: 23%;
+
+
+}
+
+.merch-container h2 {
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    left: 45%;
+}
+
+.h3 {
     text-align: center;
 }
 
-.merch-heading {
-    margin-top: 6%;
-    text-align: center;
-}
-
-.merch-content {
-    margin-top: 6%;
-    text-align: center;
-    height: 350px;
-    width: 45%;
-    display: inline-block;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-.merch-content h2 {
-    margin-bottom: 10px;
-   }
-.product-img-container img{
-    height: 250px;
-    width: 250px;
-}
-
-.merch-content .s1 {
-    /* text-align: left; */
-    margin-left: 25%;
-}
-.product-details {
-    margin-top: 5%;
-    text-align: justify;
-    
-}
-
-.shop-btn {
-    margin-left: 31%;
-    height: 30px;
-    width: 25%;
-    background-color: skyblue;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-   
-
-.notification {
-    height: 80px;
-    width: 25%;
-    background-color: skyblue;
-    right: 5%;
-    bottom: 5%;
-    position: fixed;
-    border-radius: 5px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-size: medium;
-    color: black;
-}
-
-.see-the-cart {
+.music-container1 {
     display: flex;
-    justify-content: center;
-    margin-top: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.merch-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pagination {
+    text-align: center;
+
 
 }
-.see-the-cart button {
-  height: 50px;
-  width: 150px; 
-  background-color: grey;
-  color: skyblue; 
-  border: none;
-  border-radius: 5px;
-  font-size: medium;
-  font-weight: bold;
-  cursor: pointer;
+
+.pagination button {
+    background-color: skyblue;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 4px;
+    width: 25px;
+    border: 2px solid black;
+}
+
+.pagination button:hover {
+    background-color: white;
 }

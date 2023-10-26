@@ -1,100 +1,113 @@
-header {
-    background-color: black; 
-    /* color: white; */
-    height: 2.5rem; 
-    
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap%27");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+main {
+    padding: 1rem;
 
 }
 
-nav {
+.main-header {
+
     width: 100%;
-    background-color: black;
+    height: 3.5rem;
+    background-color: #1a1a1d;
+
+}
+
+.main-header__nav {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__item-list {
+    font-size: 150%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    position: relative;
+    left: 32%;
+}
+
+.main-header__item {
+    margin: 0 2rem;
+
+    padding: 0;
+}
+
+.main-header__item a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+    color: #3e00a1;
+}
+
+.header-div h1 {
     text-align: center;
-    position: fixed;
-    
-    
-    
-}
-nav a{
-
-   text-align: center;
-   font-size: 1.5rem;
-   color: aliceblue;
-   text-decoration: none;
-   margin-left: 5rem;
-
-}
-
-.cart-btn-nav {
-    width: 5%;
-    height: 40px;
-    color: white;
-    background-color: black;
-    border-color:skyblue;
-    float: right;
-    margin-right: 2%;
-    font-size: large;
-    cursor: pointer;
-    
+    font-size: 500%;
+    margin: 0px;
 }
 
 .header-div {
-    /* height: 15rem;  */
-    background-color: grey;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- 
-
-}
-.header-div li{
-
-    list-style: none;
+    background-color: #7395ae;
+    height: 7rem;
+    padding: 0px;
 }
 
-.header-div h1{
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
-    font-size: 400%;
+
+.bottom-footer {
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #b1a296;
     color: white;
 }
 
-.header-div button {
-    width: 15%;
-    height: 2rem;
-    background-color: grey;
-    border: 1px solid white;
-    font-size: 120%;
-    padding: 7px;
-    color: white;
-    cursor: pointer;
-    margin-bottom: 2.5rem;
-}
-.play-btn {
-    margin-bottom: 1.5rem;
+.bottom-footer__nav {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-footer {
-    display: flex;
-    margin-top: 5%;
-    background-color: skyblue;
-    margin-bottom: 2%;
-    
-}
-footer h1 {
-    margin-left: 10%;
+.footer-div h1 {
+    margin: 0px;
+    transform: translateX(150%);
     font-size: 300%;
-    color: white;
 }
 
-.footer-links {
-    margin-left: 50% ;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+
+.bottom-footer__item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    left: 50%;
+
 }
-.footer-links a{
-    text-decoration: none;
-    margin-left: 8px;
+
+.bottom-header__item {
+    padding: 0;
+    margin: 0 1.5rem;
+}
+
+.bottom-header__item img {
+
+    width: 30px;
+    height: 30px;
 }

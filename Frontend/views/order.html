@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/main.css">
-    <link rel="stylesheet" href="../public/store.css">
-    <link rel="stylesheet" href="../public/cart.css">
+    <link rel="stylesheet" href="../public//order.css">
 
     <title>E-Commerce Project</title>
 </head>
 
-<body onClick="popupCart(event)">
+<body>
     <header class="main-header">
         <nav class="main-header__nav">
             <ul class="main-header__item-list">
@@ -22,48 +21,18 @@
                 <li class="main-header__item"><a href="order.html">Order</a></li>
 
             </ul>
-            <button class="cart" id="cart-btn">Cart</button>
         </nav>
-
     </header>
-    <section class="cart-nav" id="navCart">
-        <h2>Cart</h2>
-        <button class="close" id="close-btn">X</button>
-        <ul class="cart-list">
-            <li class="cart-list_item">Item</li>
-            <li class="cart-list_price">Price</li>
-            <li class="cart-list_quantity">Quantity</li>
-        </ul>
-        <ul id="cart-details">
-
-        </ul>
-        <span class="totalPrice" id="total-price"></span>
-        <div id="class-pagination" class="paginationClass"></div>
-        <button class="purchase" id="purchase-id">Purchase</button>
+    <div class="header-div">
+        <h1>The Generics</h1>
+    </div>
+    <section id="order-page" class="orderPage">
        
     </section>
     
+       
 
-    <div class="header-div" id="header-div-shop">
 
-        
-        <h1>The Generics</h1>
-        <div onclick="addtoCart(event)">
-            <section class="music-container">
-                <h2>MUSIC</h2>
-                <div class="music-container1" id="musicContainer">
-                </div>
-            </section>
-            <!-- <section class="merch-container">
-                <h2>MERCH</h2>
-                <div class="merch-container1" id="merch-container">
-                </div>
-            </section> -->
-        </div>
-        <div id="pagination" class="pagination"></div>
-        <div id="notificationContainer"></div>
-
-        <button class="cart1" id="see-the-cart">See The Cart</button>
 
         <footer class="bottom-footer">
             <nav class="bottom-footer__nav">
@@ -83,8 +52,10 @@
                 </ul>
             </nav>
         </footer>
-    </div>
+
 </body>
-<script src="../js/order.js"></script>
-<script src="../js/script.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0/axios.min.js"></script>
+<script src="../js/order.js"></script>
+
+</html>

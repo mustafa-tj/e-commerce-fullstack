@@ -1,64 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
+.ouralbum {
+    height: 180px;
+    background-color: #7395ae;
+
 }
 
-/* .container{
-    display: flex;
-    flex-direction: column;
-} */
+.ouralbum img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 48%;
+    top: 25%;
 
-
-
-
-.tours{
-    margin-top: 2rem;
-    
-    /* text-align: center; */
-    margin-bottom: 1.5rem;
-    width: 100%;
 }
 
-.tours h1 {
+.box {
+    width: 350px;
+    border: 2px solid#050505;
+    position: relative;
+    left: 38%;
+    top: 10%;
+}
+
+
+.box button{
+    background-color:#7395ae ;
+    width: 350px;
+    word-wrap: normal;
+    font-size: 200%;
+    margin-top: 0%;
     text-align: center;
+    border: none;
 }
 
-.tour-details {
+.container{
+    width: 700px;
+    position: relative;
+    left: 30%;
+}
+.container h2{
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    left: 35%;
+}
+.tour-detail{
     display: flex;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 1.5rem;
-    justify-content: center;
-    border-bottom: 1px solid black;
+    padding: 8px;
+    margin: 1rem;
+    border-bottom: 1px solid#b1a296;
 }
-
 .tour-date{
-    width:5%;
-    text-align: left;     
-}
-
-.tour-place {
-    margin-left: 60px;
-    width: 13%;
-    
-}
-.tour-stadium {
-    margin-left: 60px;
-    width: 22%;
-    margin-right: 20px;
-}
-
-
-.buy-tickets-btn{
+    font-weight: bold;
     width: 15%;
-    background-color: skyblue;
-    color: white;
-    margin-left: 8%;
-    height: 25px;
-    border: 10% solid white;
-    margin-bottom: 5px;
-    border-color: white;
-    cursor: pointer;    
 }
-
-
+.tour-place{
+    width: 25%;
+}
+.tour-stadium{
+    
+    width: 50%;
+}
+.buy-tickets-btn{
+    width: 140px;
+    height: 30px;
+    float: right;
+    background-color:skyblue ;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}

@@ -4,6 +4,6 @@ const router = express.Router()
 
 router.get('/products/music',productController.getMusic);
 
-router.get('/products/merch',productController.getMerch);
+// router.get('/products/merch',productController.getMerch);
 
 module.exports=router;
